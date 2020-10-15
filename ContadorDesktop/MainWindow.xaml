@@ -5,8 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ContadorDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="ContadorDesktop" Height="220" Width="220">
+    <StackPanel>
+    <Border Margin="16"
+      BorderBrush="LightGray"
+      BorderThickness="2">
+      <StackPanel>
+        <Label Content="conteo:"/>
+        <Label Content="0"
+        x:Name="conteolabel"
+        Margin="4"
+        FontSize="18"
+        HorizontalContentAlignment="Center"/>
+                <StackPanel Orientation="Horizontal"
+                 Margin="8"
+                 HorizontalAlignment="Center"      >
+                 
+                    <Button Content="Reiniciar"
+                    x:Name="ReiniciarButton_Click"
+                    Margin="4"
+                    Padding="0,2"
+                    MinWidth="60"
+                    Click="ReiniciarButton_Click"/>
 
-    </Grid>
+                    <Button Content="Contar"
+                     x:Name="ContarButton_Click"       
+                     Margin="4"
+                     Padding="0,2"
+                     MinWidth="60"
+                     Click="ContarButton_Click"/>
+                    
+
+
+
+
+
+                </StackPanel>
+       </StackPanel>  
+            
+               
+        </Border>
+
+        <Button Content="Salir"
+         x:Name="SalirButton_Click"       
+         Margin="16,0"
+         HorizontalAlignment="Right"
+         MinWidth="60"
+         Click="SalirButton_Click"/>
+        
+    </StackPanel>
+
+    
 </Window>
